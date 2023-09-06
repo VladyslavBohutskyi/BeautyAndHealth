@@ -1,0 +1,36 @@
+<div class="banner-section">
+  <h2 class="banner-section_title">{{ section.settings.titleid }}</h2>
+
+  <img
+    src=""
+    alt=""
+    class="banner-section_image">
+</div>
+
+
+{% schema %}
+  {
+    "name": "Banner",
+    "settings": [
+      {
+        "type": "text",
+        "id": "titleid",
+        "label": "Title"
+      }, {
+        "type": "richtext",
+        "id": "subtitle",
+        "label": "Subtitle"
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "Size Recommended 1920x850"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Banner"
+      }
+    ]
+  }
+{% endschema %}
