@@ -1,8 +1,12 @@
 {
   "sections": {
     "main": {
-      "type": "empty-section",
-      "settings": {}
+      "type": "banner-section",
+      "settings": {
+        "titleid": "Beauty adn Health",
+        "subtitleid": "<p>Quality cosmetics can enhance your natural beauty and boost your confidence.<\/p>",
+        "imageid": "shopify:\/\/shop_images\/Soap-Image2.png"
+      }
     }
   },
   "order": [
