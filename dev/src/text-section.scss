@@ -1,7 +1,9 @@
-.text-section{
+.text-section {
   position: relative;
-  min-height: 400px;
-  &__bg{
+  padding-left: 5px;
+  padding-right: 5px;
+
+  &__bg {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -11,14 +13,17 @@
     top: 0;
     left: 0;
   }
-  &__title{
 
-  }
-  &__subtitle{
-
-  }
-
-  &__btn{
-
+  &__btn {
+    background-color: #3392e5;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    display: inline-flex;
+    height: 36px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
   }
 }

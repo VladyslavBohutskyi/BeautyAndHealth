@@ -6,11 +6,17 @@
     margin-bottom: {{ section.settings.mb_id }}px;
     padding-top: {{ section.settings.pt_id }}px ;
     padding-bottom: {{ section.settings.pb_id }}px ;
+    color: {{ section.settings.color_id }};
+    min-height: {{ section.settings.min-height_id }}px;
+    text-align: {{ section.settings.text_align }};
   }
 </style>
-{{  }}
+
 <div class="text-section">
-  <img src="{{ section.settings.bg_id | img_url: 'master' }}" alt="" class="text-section__bg">
+  {% if section.settings.bg_id %}
+    <img src="{{ section.settings.bg_id | img_url: 'master' }}" alt="#" class="text-section__bg">
+  {% endif %}
+
   <h2 class="text-section__title">
     {{ section.settings.title_id }}
   </h2>
@@ -18,10 +24,11 @@
     {{ section.settings.richtext_id }}
   </div>
   <div class="text-section__btn">
-    <a href="#">BTN</a>
+    <a href="{{ section.settings.button_url }}">{{ section.settings.button_title }}</a>
   </div>
 </div>
 
+{{  }}
 {% schema %}
 {
   "name": "Text",
@@ -78,11 +85,53 @@
       "default": 0
     },
     {
+      "type": "range",
+      "id": "min-height_id",
+      "min": 0,
+      "max": 900,
+      "step": 10,
+      "label": "Height",
+      "default": 0
+    },
+    {
       "type": "color",
       "id": "color_id",
       "label": "Color",
       "default": "#000",
       "info": "Color For Your Text"
+    },
+    {
+      "type": "text",
+      "id": "button_title",
+      "label": "Button",
+      "default": "Button",
+      "info": "Title of button"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "URL for Button",
+      "info": "Insert link"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text align",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
     }
   ],
   "presets": [

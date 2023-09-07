@@ -23,11 +23,27 @@
         "subtitleid": "<p>Test banner <\/p>",
         "imageid": "shopify:\/\/shop_images\/Soap-Image4.png"
       }
+    },
+    "466172c4-84fa-4754-808d-114cee3f3ddd": {
+      "type": "text-section",
+      "settings": {
+        "title_id": "Test title",
+        "richtext_id": "<p>test sub<\/p>",
+        "pt_id": 5,
+        "pb_id": 5,
+        "mt_id": 25,
+        "mb_id": 10,
+        "min-height_id": 170,
+        "color_id": "#0b365b",
+        "button_title": "BTN",
+        "button_url": "https:\/\/google.com",
+        "text_align": "center"
+      }
     }
   },
-  
   "order": [
     "main",
-    "3f284415-c424-49f1-8c24-8ae3b8640181"
+    "3f284415-c424-49f1-8c24-8ae3b8640181",
+    "466172c4-84fa-4754-808d-114cee3f3ddd"
   ]
 }
