@@ -1,0 +1,94 @@
+{{ 'text-section.css' | asset_url | stylesheet_tag }}
+
+<style>
+  #shopify-section-{{ section.id }} .text-section{
+    margin-top: {{ section.settings.mt_id }}px;
+    margin-bottom: {{ section.settings.mb_id }}px;
+    padding-top: {{ section.settings.pt_id }}px ;
+    padding-bottom: {{ section.settings.pb_id }}px ;
+  }
+</style>
+{{  }}
+<div class="text-section">
+  <img src="{{ section.settings.bg_id | img_url: 'master' }}" alt="" class="text-section__bg">
+  <h2 class="text-section__title">
+    {{ section.settings.title_id }}
+  </h2>
+  <div class="text-section__subtitle">
+    {{ section.settings.richtext_id }}
+  </div>
+  <div class="text-section__btn">
+    <a href="#">BTN</a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title_id",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext_id",
+      "label": "Subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_id",
+      "label": "Background"
+    },
+    {
+      "type": "range",
+      "id": "pt_id",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Padding Top",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "pb_id",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Padding Bottom",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "mt_id",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Margin Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mb_id",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Margin Bottom",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "color_id",
+      "label": "Color",
+      "default": "#000",
+      "info": "Color For Your Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text"
+    }
+  ]
+}
+{% endschema %}
