@@ -2,30 +2,39 @@
 
 <style>
   #shopify-section-{{ section.id }} .text-section{
-    margin-top: {{ section.settings.mt_id }}px;
-    margin-bottom: {{ section.settings.mb_id }}px;
-    padding-top: {{ section.settings.pt_id }}px ;
-    padding-bottom: {{ section.settings.pb_id }}px ;
-    color: {{ section.settings.color_id }};
-    min-height: {{ section.settings.min-height_id }}px;
+    margin-top: {{ section.settings.mt }}px;
+    margin-bottom: {{ section.settings.mb }}px;
+    padding-top: {{ section.settings.pt }}px ;
+    padding-bottom: {{ section.settings.pb }}px ;
+    color: {{ section.settings.color }};
+    background: {{section.settings.color_bg  }};
+    min-height: {{ section.settings.min-height }}px;
     text-align: {{ section.settings.text_align }};
+    max-width: {{ section.settings.max-width }}px;
+  }
+  @media screen and (max-width: 600px) {
+    #shopify-section-{{ section.id }} .text-section{
+      padding-top: {{ section.settings.pt_mobile }}px ;
+      padding-bottom: {{ section.settings.pb_mobile }}px ;
+      max-width: {{ section.settings.max-width_mobile }}px;
+    }
   }
   #shopify-section-{{ section.id }} .text-section__btn a{
-    color: {{ section.settings.button_title_color }} ;
-    background-color: {{ section.settings.button_bg }} ;
+       color: {{ section.settings.button_title_color }} ;
+       background-color: {{ section.settings.button_bg }} ;
   }
 </style>
 
 <div class="text-section">
-  {% if section.settings.bg_id %}
+  {% if section.settings.bg %}
     <img src="{{ section.settings.bg_id | img_url: 'master' }}" alt="#" class="text-section__bg">
   {% endif %}
 
   <h2 class="text-section__title">
-    {{ section.settings.title_id }}
+    {{ section.settings.title }}
   </h2>
   <div class="text-section__subtitle">
-    {{ section.settings.richtext_id }}
+    {{ section.settings.richtext }}
   </div>
   <div class="text-section__btn">
     <a href="{{ section.settings.button_url }}">{{ section.settings.button_title }}</a>
@@ -34,26 +43,26 @@
 
 {% schema %}
 {
-  "name": "Text",
+  "name": "Text Section",
   "settings": [
     {
       "type": "text",
-      "id": "title_id",
+      "id": "title",
       "label": "Title"
     },
     {
       "type": "richtext",
-      "id": "richtext_id",
+      "id": "richtext",
       "label": "Subtitle"
     },
     {
       "type": "image_picker",
-      "id": "bg_id",
+      "id": "bg",
       "label": "Background"
     },
     {
       "type": "range",
-      "id": "pt_id",
+      "id": "pt",
       "min": 0,
       "max": 100,
       "step": 1,
@@ -62,7 +71,7 @@
     },
     {
       "type": "range",
-      "id": "pb_id",
+      "id": "pb",
       "min": 0,
       "max": 100,
       "step": 1,
@@ -71,7 +80,7 @@
     },
     {
       "type": "range",
-      "id": "mt_id",
+      "id": "mt",
       "min": 0,
       "max": 100,
       "step": 1,
@@ -80,7 +89,7 @@
     },
     {
       "type": "range",
-      "id": "mb_id",
+      "id": "mb",
       "min": 0,
       "max": 100,
       "step": 1,
@@ -89,7 +98,7 @@
     },
     {
       "type": "range",
-      "id": "min-height_id",
+      "id": "min-height",
       "min": 0,
       "max": 900,
       "step": 10,
@@ -97,11 +106,27 @@
       "default": 0
     },
     {
+      "type": "range",
+      "id": "max-width",
+      "min": 0,
+      "max": 2000,
+      "step": 20,
+      "label": "Max-width",
+      "default": 1640
+    },
+    {
       "type": "color",
-      "id": "color_id",
+      "id": "color",
       "label": "Color",
       "default": "#000",
       "info": "Color For Your Text"
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "Background Color",
+      "default": "#FFFFFF",
+      "info": "Color For Your Background"
     },
     {
       "type": "text",
@@ -131,6 +156,33 @@
       "info": "Insert link"
     },
     {
+      "type": "range",
+      "id": "pt_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Padding Top Mobile",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "pb_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Padding Bottom Mobile",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "max-width_mobile",
+      "min": 0,
+      "max": 2000,
+      "step": 20,
+      "label": "Max Width Mobile",
+      "default": 1640
+    },
+    {
       "type": "select",
       "id": "text_align",
       "label": "Text align",
@@ -153,7 +205,7 @@
   ],
   "presets": [
     {
-      "name": "Text"
+      "name": "Text Section"
     }
   ]
 }
