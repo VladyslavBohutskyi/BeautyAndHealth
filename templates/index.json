@@ -36,8 +36,10 @@
         "min-height_id": 170,
         "color_id": "#0b365b",
         "button_title": "BTN",
+        "button_title_color": "#000",
+        "button_bg": "#F0F8FF",
         "button_url": "https:\/\/google.com",
-        "text_align": "center"
+        "text_align": "left"
       }
     }
   },

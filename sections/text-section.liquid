@@ -10,6 +10,10 @@
     min-height: {{ section.settings.min-height_id }}px;
     text-align: {{ section.settings.text_align }};
   }
+  #shopify-section-{{ section.id }} .text-section__btn a{
+    color: {{ section.settings.button_title_color }} ;
+    background-color: {{ section.settings.button_bg }} ;
+  }
 </style>
 
 <div class="text-section">
@@ -28,7 +32,6 @@
   </div>
 </div>
 
-{{  }}
 {% schema %}
 {
   "name": "Text",
@@ -106,6 +109,20 @@
       "label": "Button",
       "default": "Button",
       "info": "Title of button"
+    },
+    {
+      "type": "color",
+      "id": "button_title_color",
+      "label": "Button Title Color",
+      "default": "#000",
+      "info": "Color Of Your Title Inseide Button"
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#a6b0b9",
+      "info": "Button Background Color"
     },
     {
       "type": "url",

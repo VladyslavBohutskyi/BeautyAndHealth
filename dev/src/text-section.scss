@@ -15,15 +15,15 @@
   }
 
   &__btn {
-    background-color: #3392e5;
-    text-decoration: none;
-    font-weight: 600;
-    color: black;
-    display: inline-flex;
-    height: 36px;
-    width: 100px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+    a {
+      font-weight: 600;
+      display: inline-flex;
+      height: 36px;
+      width: 100px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      text-decoration: none;
+    }
   }
 }
