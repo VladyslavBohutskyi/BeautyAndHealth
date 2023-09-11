@@ -5,11 +5,14 @@
         "type": "header",
         "settings": {
           "sticky_header": false,
+          "menu_position": "center",
           "max_width": 1300,
           "height": 80,
-          "bg_color": "#FFFFFF",
+          "bg_color": "#ffffff",
           "logo": "shopify:\/\/shop_images\/Screenshot_2023-09-10_141332.png",
-          "menu": ""
+          "menu": "main-menu",
+          "menu_color": "#000",
+          "active_color": "#676767"
         }
       },
       "footer": {
