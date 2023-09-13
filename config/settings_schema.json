@@ -47,9 +47,20 @@
       }
     ]
   },
+  
   {
     "name": "Typography",
     "settings": [
+      {
+        "type": "range",
+        "id": "body_font_size",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Body Font Size",
+        "default": 16
+      },
       {
         "type": "font_picker",
         "id": "font_body",

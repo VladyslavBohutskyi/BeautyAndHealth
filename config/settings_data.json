@@ -1,5 +1,6 @@
 {
   "current": {
+    "font_body": "abril_fatface_n4",
     "sections": {
       "header": {
         "type": "header",
@@ -9,9 +10,9 @@
           "max_width": 1300,
           "height": 80,
           "bg_color": "#ffffff",
-          "logo": "shopify:\/\/shop_images\/Screenshot_2023-09-10_141332.png",
+          "logo": "shopify:\/\/shop_images\/logo.png",
           "menu": "main-menu",
-          "menu_color": "#000",
+          "menu_color": "#000000",
           "active_color": "#676767"
         }
       },

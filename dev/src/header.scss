@@ -72,11 +72,10 @@
       left: -100vw;
       position: fixed;
       top: 80px;
-      background: #ffffff;
       height: 100%;
       width: 100vw;
       max-width: 400px;
-      padding-top: 20px;
+      transition: left .15 ease;
 
       a {
         display: block;
@@ -84,9 +83,6 @@
         padding: 16px;
         padding-left: 21px;
         text-transform: capitalize;
-        &.active{
-          background-color: azure;
-        }
       }
     }
   }
