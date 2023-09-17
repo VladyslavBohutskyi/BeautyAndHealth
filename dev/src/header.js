@@ -19,7 +19,6 @@ if (!customElements.get('s-header')) {
     }
 
     stickyHeader() {
-      console.log(this.getAttribute('data-sticky'));
       const _this = this
       function addSticky() {
         if (document.documentElement.scrollTop > 200) {

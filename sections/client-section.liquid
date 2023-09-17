@@ -1,0 +1,119 @@
+{{ 'client-section.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'client-section.js' | asset_url }}" defer></script>
+
+<style>
+  #shopify-section-{{ section.id }} .s-clients-section {
+    color: {{ section.settings.color }};
+  }
+  #shopify-section-{{ section.id }} .s-clients-section__bg {
+    filter: brightness(0.{{ section.settings.img_brightnes  | minus: 9 | abs }});
+  }
+</style>
+
+<s-client-section
+  data-autoplay="{{ section.settings.autoplay }}"
+  data-speed="{{ section.settings.speed }}"
+>
+  <section class="s-clients-section">
+    {% if section.settings.bg_image %}
+      <img
+        src="{{ section.settings.bg_image | img_url: 'master'}}"
+        alt="{{ section.settings.bg_image.alt }}"
+        class="s-clients-section__bg"
+      >
+    {% endif %}
+    <div class="s-clients-section__header">
+      <span class="s-client-section__header__subtitle">{{ section.settings.subtitle }}</span>
+      {{ section.settings.subtitle }}
+    </div>
+  </section>
+</s-client-section>
+
+{% schema %}
+{
+  "name": "Our clients",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Slider autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "min": 1000,
+      "max": 9000,
+      "step": 500,
+      "unit": "ms",
+      "label": "Autoplay speed",
+      "default": 3000
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background image",
+      "info": "Size reccomended 1920x850"
+    },
+    {
+      "type": "range",
+      "id": "img_brightnes",
+      "min": 0,
+      "max": 9,
+      "step": 1,
+      "label": "Background fogging",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Color for your text ",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "What people say"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "<h2>Words of our clients</h2>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "client",
+      "name": "Client",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "client_foto",
+          "label": "Client foto",
+          "info": "Size recomended 300x300"
+        },
+        {
+          "type": "text",
+          "id": "client_name",
+          "label": "Client Name",
+          "default": "John Doe"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "<h2>Words of our clients</h2>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our clients"
+    }
+  ]
+}
+{% endschema %}

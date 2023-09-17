@@ -1,0 +1,22 @@
+.s-clients-section {
+  position: relative;
+  padding: 50px;
+  z-index: 1;
+  &__bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__header {
+    text-align: center;
+    &__subtitle {
+
+    }
+  }
+}

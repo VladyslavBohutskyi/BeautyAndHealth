@@ -1,5 +1,17 @@
 {
   "sections": {
+    "77491f9c-08d1-40bb-a429-92aafbb5d4a5": {
+      "type": "client-section",
+      "settings": {
+        "autoplay": true,
+        "speed": 3000,
+        "bg_image": "shopify:\/\/shop_images\/Soap-Image2.png",
+        "img_brightnes": 0,
+        "color": "#ffffff",
+        "subtitle": "What people say",
+        "title": "<h2>Words of our clients<\/h2>"
+      }
+    },
     "main": {
       "type": "banner-section",
       "settings": {
@@ -10,18 +22,6 @@
         "titleid": "Beauty adn Health",
         "subtitleid": "<p>Quality cosmetics can enhance your natural beauty and boost your confidence.<\/p>",
         "imageid": "shopify:\/\/shop_images\/Soap-Image2.png"
-      }
-    },
-    "3f284415-c424-49f1-8c24-8ae3b8640181": {
-      "type": "banner-section",
-      "settings": {
-        "min_height": 350,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "content_color": "#d3d607",
-        "titleid": "Test Banner",
-        "subtitleid": "<p>Test banner <\/p>",
-        "imageid": "shopify:\/\/shop_images\/Soap-Image4.png"
       }
     },
     "466172c4-84fa-4754-808d-114cee3f3ddd": {
@@ -36,16 +36,16 @@
         "min-height_id": 170,
         "color_id": "#0b365b",
         "button_title": "BTN",
-        "button_title_color": "#000",
-        "button_bg": "#F0F8FF",
+        "button_title_color": "#000000",
+        "button_bg": "#f0f8ff",
         "button_url": "https:\/\/google.com",
         "text_align": "left"
       }
     }
   },
   "order": [
+    "77491f9c-08d1-40bb-a429-92aafbb5d4a5",
     "main",
-    "3f284415-c424-49f1-8c24-8ae3b8640181",
     "466172c4-84fa-4754-808d-114cee3f3ddd"
   ]
 }

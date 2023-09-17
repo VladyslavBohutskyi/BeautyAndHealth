@@ -74,12 +74,11 @@ body {
 
 h1 h2 h3 h4 h5 h6 .h1 .h2 .h3 .h4 .h5 .h6{
 	font-family: var(--font-heading);
-	color: var(--color-heading);
+	// color: var(--color-heading);
 }
-
-a{
-	color: var(--color-link);
-}
+// a{
+// 	color: var(--color-link);
+// }
 
 body, p{font-size:var(--font-size-body);}
   h1, .h1 {font-size: var(--font-size-h1);}
