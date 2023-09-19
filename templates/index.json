@@ -2,14 +2,49 @@
   "sections": {
     "77491f9c-08d1-40bb-a429-92aafbb5d4a5": {
       "type": "client-section",
+      "blocks": {
+        "5d82a16c-81a3-445e-94da-5bf3b14ad6c5": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "client_name": "John Doed",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        },
+        "b09735b4-e8d6-4229-ac94-99d7a214a2b7": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        },
+        "1d9cccc3-be12-4f4a-b05d-83dd60409b37": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        }
+      },
+      "block_order": [
+        "5d82a16c-81a3-445e-94da-5bf3b14ad6c5",
+        "b09735b4-e8d6-4229-ac94-99d7a214a2b7",
+        "1d9cccc3-be12-4f4a-b05d-83dd60409b37"
+      ],
       "settings": {
         "autoplay": true,
         "speed": 3000,
         "bg_image": "shopify:\/\/shop_images\/Soap-Image2.png",
-        "img_brightnes": 0,
-        "color": "#ffffff",
+        "img_brightnes": 10,
+        "color": "#000000",
         "subtitle": "What people say",
-        "title": "<h2>Words of our clients<\/h2>"
+        "title": "<h2>Words of our clients<\/h2>",
+        "foto_size": 140,
+        "review_bg_color": "#ffffff",
+        "client_name_color": "#9e9e9e",
+        "review_text_color": "#9e9e9e"
       }
     },
     "main": {
