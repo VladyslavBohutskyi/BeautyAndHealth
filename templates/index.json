@@ -12,40 +12,85 @@
         "imageid": "shopify:\/\/shop_images\/Soap-Image2.png"
       }
     },
-    "3f284415-c424-49f1-8c24-8ae3b8640181": {
-      "type": "banner-section",
+    "fc3b6581-81b3-46ba-9fa4-2b8ed89c7ced": {
+      "type": "steps-scroll-section",
+      "blocks": {
+        "4e4517c0-7375-42a2-a08c-9f48e8714687": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt velit distinctio provident sequi unde!<\/p>"
+          }
+        },
+        "437826b4-8b99-4f76-80ea-f22c0855fbf7": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fashion-model-in-fur.jpg",
+            "content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt velit distinctio provident sequi unde!<\/p>"
+          }
+        },
+        "80f42f64-7f5b-456a-8fd8-dd0841d47f44": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
+            "content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt velit distinctio provident sequi unde!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4e4517c0-7375-42a2-a08c-9f48e8714687",
+        "437826b4-8b99-4f76-80ea-f22c0855fbf7",
+        "80f42f64-7f5b-456a-8fd8-dd0841d47f44"
+      ],
       "settings": {
-        "min_height": 350,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "content_color": "#d3d607",
-        "titleid": "Test Banner",
-        "subtitleid": "<p>Test banner <\/p>",
-        "imageid": "shopify:\/\/shop_images\/Soap-Image4.png"
+        "bg_color": "#f4f3f3",
+        "margin_top_desktop": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_desktop": 50,
+        "margin_bottom_mobile": 50,
+        "padding_top_desktop": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_desktop": 50,
+        "padding_bottom_mobile": 50,
+        "section_title": "Welcome to my shop!",
+        "show_steps": true
       }
     },
-    "466172c4-84fa-4754-808d-114cee3f3ddd": {
+    "6b47ade0-6bce-492c-a40e-7d434cb0f0ee": {
+      "type": "banner-section",
+      "settings": {
+        "min_height": 400,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "content_color": "#FFFFFF",
+        "titleid": "",
+        "subtitleid": "",
+        "imageid": "shopify:\/\/shop_images\/logo.png"
+      }
+    },
+    "2815c019-b8f5-4d21-9164-11567d350e6a": {
       "type": "text-section",
       "settings": {
-        "title_id": "Test title",
-        "richtext_id": "<p>test sub<\/p>",
+        "title_id": "111111111111111111",
+        "richtext_id": "<p>11111111111111111111111111<\/p>",
         "pt_id": 5,
         "pb_id": 5,
-        "mt_id": 25,
-        "mb_id": 10,
-        "min-height_id": 170,
-        "color_id": "#0b365b",
-        "button_title": "BTN",
+        "mt_id": 0,
+        "mb_id": 0,
+        "min-height_id": 0,
+        "color_id": "#000",
+        "button_title": "Button",
         "button_title_color": "#000",
-        "button_bg": "#F0F8FF",
-        "button_url": "https:\/\/google.com",
-        "text_align": "left"
+        "button_bg": "#a6b0b9",
+        "button_url": "",
+        "text_align": "center"
       }
     }
   },
   "order": [
     "main",
-    "3f284415-c424-49f1-8c24-8ae3b8640181",
-    "466172c4-84fa-4754-808d-114cee3f3ddd"
+    "fc3b6581-81b3-46ba-9fa4-2b8ed89c7ced",
+    "6b47ade0-6bce-492c-a40e-7d434cb0f0ee",
+    "2815c019-b8f5-4d21-9164-11567d350e6a"
   ]
 }

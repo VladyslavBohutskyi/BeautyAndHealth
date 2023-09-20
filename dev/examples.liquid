@@ -1,0 +1,135 @@
+{{ 'steps-scroll-section.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'steps-scroll-section.js' | asset_url }}" defer></script>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-top: {{ section.settings.margin_top_desktop }}px;
+    margin-bottom: {{ section.settings.margin_bottom_desktop }}px;
+    padding-top: {{ section.settings.padding_top_desktop }}px;
+    padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+    background: {{ section.settings.bg_color }};
+  }
+
+  @media (max-width: 600px) {
+   #shopify-section-{{ section.id }} {
+      margin-top: {{ section.settings.margin_top_mobile }}px;
+      margin-bottom: {{ section.settings.margin_bottom_mobile }}px;
+      padding-top: {{ section.settings.padding_top_mobile }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+   }
+  }
+</style>
+
+<seclion class="">
+  {% for block in section.blocks %}
+    {%- assign item = block.settings -%}
+    <div class="">
+        <img src="{{ item.image | img_url: 'master' }}" class="">
+    </div>
+  {% endfor %}
+</seclion>
+
+{% schema %}
+{
+  "name": "SECTION",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "margin_top_desktop",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Margin Top Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Margin Top Mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_desktop",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Margin Bottom Desktop",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Margin Bottom Mobile",
+      "default": 35
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Padding Top Desktop",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Padding Top Mobile",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Padding Bottom Desktop ",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Padding Bottom Mobile",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Size Recommended 250x300"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "SECTION"
+    }
+  ]
+}
+{% endschema %}
