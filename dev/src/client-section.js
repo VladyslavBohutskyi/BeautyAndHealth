@@ -1,32 +1,34 @@
-if (!customElements.get('s-client-section')) {
-  customElements.define('s-client-section', class SClientSection extends HTMLElement {
-    constructor() {
-      super();  // all atr from html elem
+if(!customElements.get('s-our-clients')){
+
+  customElements.define('s-our-clients', class SOurClients extends HTMLElement{
+  constructor(){
+    super();
+  }
+
+  connectedCallback(){
+   this.initSlider()
+  }
+
+  initSlider() {
+    this.speed = this.getAttribute('data-speed')
+    this.apply = (this.getAttribute('data-slider_apply') == 'true' ? false : true )
+    this.settings = {
+      prevNextButtons: true,
+      pageDots: false,
+      cellAlign: 'center',
+      contain: true,
+      draggable: false,
+      watchCSS: this.apply
     }
 
-    connectedCallback() {
-      console.log(this.getAttribute('data-speed'));
-      this.initSlider()
-    }
+    this.speed == 'false' ? false : this.settings.autoPlay = +this.speed;
 
-    initSlider(){
-      this.speed = this.getAttribute('data-speed')
-      this.settings = {
-        autoPlay: +this.speed,
-        prevNextButtons: true,
-        pageDots: false,
-        cellAlign: 'left',
-        contain: true,
-      }
-
-      this.speed == 'false' ? false : this.settings.autoPLay = +this.speed
+    this.slider = new Flickity(this.querySelector('.s-our-clients__slider'), this.settings)
+  }
 
 
-      this.slider = new Flickity(this.querySelector('.s-clients-section__slider'), this.settings)
-    }
+})
 
-
-  });
 }
 
 

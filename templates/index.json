@@ -26,18 +26,57 @@
             "client_name": "John Doe",
             "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
           }
+        },
+        "eff0383b-ff02-44c2-b978-4544dd299a86": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/logo.png",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        },
+        "dd1cd510-e508-4098-931b-57cb71913d3b": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/Screenshot_2023-09-10_141332.png",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        },
+        "7c934082-19a0-417e-b81e-e28a11fc1531": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/btn2.png",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        },
+        "86834cac-8467-4b36-b1cf-85c6b9e2eefb": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/logo.png",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
         }
       },
       "block_order": [
         "5d82a16c-81a3-445e-94da-5bf3b14ad6c5",
         "b09735b4-e8d6-4229-ac94-99d7a214a2b7",
-        "1d9cccc3-be12-4f4a-b05d-83dd60409b37"
+        "1d9cccc3-be12-4f4a-b05d-83dd60409b37",
+        "eff0383b-ff02-44c2-b978-4544dd299a86",
+        "dd1cd510-e508-4098-931b-57cb71913d3b",
+        "7c934082-19a0-417e-b81e-e28a11fc1531",
+        "86834cac-8467-4b36-b1cf-85c6b9e2eefb"
       ],
       "settings": {
         "autoplay": true,
         "speed": 3000,
+        "number_of_slides": "25%",
+        "number_of_slides_tablet": "50%",
+        "number_of_slides_mobile": "100%",
         "bg_image": "shopify:\/\/shop_images\/Soap-Image2.png",
-        "img_brightnes": 10,
+        "bg_brightness": 0,
         "color": "#000000",
         "subtitle": "What people say",
         "title": "<h2>Words of our clients<\/h2>",
