@@ -6,11 +6,12 @@
     color: {{ section.settings.color }};
   }
   #shopify-section-{{ section.id }} .s-clients-section__bg {
-    filter: brightness({% if section.settings.img_brightnes  == 10 %}1{% else %} 0.{{section.settings.img_brightnes}} {% endif %});
+    filter: brightness({% if section.settings.bg_brightness  == 0 %}1{% else %} 0.{{section.settings.bg_brightness | minus: 9 | abs}} {% endif %});
   }
   #shopify-section-{{ section.id }} .s-clients-section__review {
     background-color: {{ section.settings.review_bg_color }};
     color: {{ section.settings.review_text_color }};
+    width: {{ section.settings.number_of_slides }};
   }
   #shopify-section-{{ section.id }} .s-clients-section__review__foto {
     height: {{ section.settings.foto_size }}px;
@@ -20,12 +21,27 @@
   #shopify-section-{{ section.id }} .s-clients-section__review h5 {
     color: {{ section.settings.client_name_color }};
   }
-
+  @media screen and (max-width: 990px) {
+    #shopify-section-{{ section.id }} .s-clients-section__review {
+      width: {{ section.settings.number_of_slides_tablet }};
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #shopify-section-{{ section.id }} .s-clients-section__review {
+      width: {{ section.settings.number_of_slides_mobile }};
+    }
+  }
 </style>
+
+{% if section.settings.autoplay == true %}
+  {% assign speedSlider = section.settings.speed %}
+  {% else %}
+  {% assign speedSlider = false %}
+{% endif %}
 
 <s-client-section
   data-autoplay="{{ section.settings.autoplay }}"
-  data-speed="{{ section.settings.speed }}"
+  data-speed={{ speedSlider }}
 >
   <section class="s-clients-section">
     {% if section.settings.bg_image %}
@@ -43,9 +59,11 @@
       {% for block in section.blocks %}
         {% assign client = block.settings %}
         <div class="s-clients-section__review">
+          {% if client.client_foto %}
           <div class="s-clients-section__review__foto">
             <img src="{{ client.client_foto | img_url: 'medium' }}" alt="{{ client.client_name }}">
-          </div>
+          </div>  
+          {% endif %}
           <h5>{{ client.client_name }}</h5>
           <p>{{ client.review }}</p>
         </div>
@@ -75,6 +93,78 @@
       "default": 3000
     },
     {
+      "type": "select",
+      "id": "number_of_slides",
+      "label": "Number of slides",
+      "options": [
+        {
+          "value": "100%",
+          "label": "One"
+        },
+        {
+          "value": "50%",
+          "label": "Two"
+        },
+        {
+          "value": "33.3%",
+          "label": "Three"
+        },
+        {
+          "value": "25%",
+          "label": "Four"
+        }
+      ],
+      "default": "25%"
+    },
+    {
+      "type": "select",
+      "id": "number_of_slides_tablet",
+      "label": "Number of slides tablet",
+      "options": [
+        {
+          "value": "100%",
+          "label": "One"
+        },
+        {
+          "value": "50%",
+          "label": "Two"
+        },
+        {
+          "value": "33.3%",
+          "label": "Three"
+        },
+        {
+          "value": "25%",
+          "label": "Four"
+        }
+      ],
+      "default": "50%"
+    },
+    {
+      "type": "select",
+      "id": "number_of_slides_mobile",
+      "label": "Number of slides mobile",
+      "options": [
+        {
+          "value": "100%",
+          "label": "One"
+        },
+        {
+          "value": "50%",
+          "label": "Two"
+        },
+        {
+          "value": "33.3%",
+          "label": "Three"
+        },
+        {
+          "value": "25%",
+          "label": "Four"
+        }
+      ],
+      "default": "100%"
+    },
+    {
       "type": "image_picker",
       "id": "bg_image",
       "label": "Background image",
@@ -82,12 +172,12 @@
     },
     {
       "type": "range",
-      "id": "img_brightnes",
+      "id": "bg_brightness",
       "min": 0,
-      "max": 10,
+      "max": 9,
       "step": 1,
       "label": "Background fogging",
-      "default": 10
+      "default": 0
     },
     {
       "type": "color",
@@ -110,12 +200,12 @@
     {
       "type": "range",
       "id": "foto_size",
-      "min": 80,
+      "min": 60,
       "max": 300,
-      "step": 10,
+      "step": 5,
       "unit": "px",
       "label": "Foto size",
-      "default": 200
+      "default": 120
     },
     {
       "type": "color",

@@ -72,6 +72,10 @@ body {
 	background-color: var(--color-background);
 }
 
+*{
+	box-sizing: border-box;
+}
+
 h1 h2 h3 h4 h5 h6 .h1 .h2 .h3 .h4 .h5 .h6{
 	font-family: var(--font-heading);
 	margin: 0;

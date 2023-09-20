@@ -6,10 +6,27 @@ if (!customElements.get('s-client-section')) {
 
     connectedCallback() {
       console.log(this.getAttribute('data-speed'));
+      this.initSlider()
     }
 
-  });
+    initSlider(){
+      this.speed = this.getAttribute('data-speed')
+      this.settings = {
+        autoPlay: +this.speed,
+        prevNextButtons: true,
+        pageDots: false,
+        cellAlign: 'left',
+        contain: true,
+      }
 
+      this.speed == 'false' ? false : this.settings.autoPLay = +this.speed
+
+
+      this.slider = new Flickity(this.querySelector('.s-clients-section__slider'), this.settings)
+    }
+
+
+  });
 }
 
 
