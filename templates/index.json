@@ -1,91 +1,5 @@
 {
   "sections": {
-    "77491f9c-08d1-40bb-a429-92aafbb5d4a5": {
-      "type": "client-section",
-      "blocks": {
-        "5d82a16c-81a3-445e-94da-5bf3b14ad6c5": {
-          "type": "client",
-          "settings": {
-            "client_foto": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "client_name": "John Doed",
-            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
-          }
-        },
-        "b09735b4-e8d6-4229-ac94-99d7a214a2b7": {
-          "type": "client",
-          "settings": {
-            "client_foto": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "client_name": "John Doe",
-            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
-          }
-        },
-        "1d9cccc3-be12-4f4a-b05d-83dd60409b37": {
-          "type": "client",
-          "settings": {
-            "client_foto": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "client_name": "John Doe",
-            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
-          }
-        },
-        "eff0383b-ff02-44c2-b978-4544dd299a86": {
-          "type": "client",
-          "settings": {
-            "client_foto": "shopify:\/\/shop_images\/logo.png",
-            "client_name": "John Doe",
-            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
-          }
-        },
-        "dd1cd510-e508-4098-931b-57cb71913d3b": {
-          "type": "client",
-          "settings": {
-            "client_foto": "shopify:\/\/shop_images\/Screenshot_2023-09-10_141332.png",
-            "client_name": "John Doe",
-            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
-          }
-        },
-        "7c934082-19a0-417e-b81e-e28a11fc1531": {
-          "type": "client",
-          "settings": {
-            "client_foto": "shopify:\/\/shop_images\/btn2.png",
-            "client_name": "John Doe",
-            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
-          }
-        },
-        "86834cac-8467-4b36-b1cf-85c6b9e2eefb": {
-          "type": "client",
-          "settings": {
-            "client_foto": "shopify:\/\/shop_images\/logo.png",
-            "client_name": "John Doe",
-            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
-          }
-        }
-      },
-      "block_order": [
-        "5d82a16c-81a3-445e-94da-5bf3b14ad6c5",
-        "b09735b4-e8d6-4229-ac94-99d7a214a2b7",
-        "1d9cccc3-be12-4f4a-b05d-83dd60409b37",
-        "eff0383b-ff02-44c2-b978-4544dd299a86",
-        "dd1cd510-e508-4098-931b-57cb71913d3b",
-        "7c934082-19a0-417e-b81e-e28a11fc1531",
-        "86834cac-8467-4b36-b1cf-85c6b9e2eefb"
-      ],
-      "settings": {
-        "autoplay": true,
-        "speed": 3000,
-        "number_of_slides": "25%",
-        "number_of_slides_tablet": "50%",
-        "number_of_slides_mobile": "100%",
-        "bg_image": "shopify:\/\/shop_images\/Soap-Image2.png",
-        "bg_brightness": 0,
-        "color": "#000000",
-        "subtitle": "What people say",
-        "title": "<h2>Words of our clients<\/h2>",
-        "foto_size": 140,
-        "review_bg_color": "#ffffff",
-        "client_name_color": "#9e9e9e",
-        "review_text_color": "#9e9e9e"
-      }
-    },
     "main": {
       "type": "banner-section",
       "settings": {
@@ -98,28 +12,121 @@
         "imageid": "shopify:\/\/shop_images\/Soap-Image2.png"
       }
     },
-    "466172c4-84fa-4754-808d-114cee3f3ddd": {
+    "78b282ac-c3ba-4597-be23-77bd8f357a41": {
+      "type": "our-clients-section",
+      "blocks": {
+        "9d55bb19-ef85-4773-9562-282a804003b6": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        },
+        "b26d67de-9c20-44b0-a573-c52023aa3f90": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/fashion-model-in-fur.jpg",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        },
+        "d55fcda1-9140-4512-b7fb-9fab73d13ff1": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        },
+        "58181bd1-5670-48e1-b2fc-5f969f9fd462": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        },
+        "ec3994f0-8177-48e1-b203-03dbe8b4c604": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/fashion-model-in-fur.jpg",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        },
+        "c8a58f3f-e576-47c6-a082-7fbf5ab74ae9": {
+          "type": "client",
+          "settings": {
+            "client_foto": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "client_name": "John Doe",
+            "review": "I recently tried handmade soap, and it was a delightful experience. The soap's natural fragrance and gentle, chemical-free formula left my skin feeling refreshed and pampered."
+          }
+        }
+      },
+      "block_order": [
+        "9d55bb19-ef85-4773-9562-282a804003b6",
+        "b26d67de-9c20-44b0-a573-c52023aa3f90",
+        "d55fcda1-9140-4512-b7fb-9fab73d13ff1",
+        "58181bd1-5670-48e1-b2fc-5f969f9fd462",
+        "ec3994f0-8177-48e1-b203-03dbe8b4c604",
+        "c8a58f3f-e576-47c6-a082-7fbf5ab74ae9"
+      ],
+      "settings": {
+        "content_width": 1200,
+        "spacing": 16,
+        "slider_apply": true,
+        "autoplay": true,
+        "speed": 3000,
+        "number_of_slides": "4",
+        "number_of_slides_tablet": "2",
+        "number_of_slides_mobile": "1",
+        "bg_color": "#676767",
+        "bg_brightness": 0,
+        "content_color": "#ffffff",
+        "subtitle": "What people say",
+        "title": "<h2>Words Of Our Clients<\/h2>",
+        "foto_size": 120,
+        "review_bg_color": "#ffffff",
+        "client_name_color": "#000000",
+        "review_text_color": "#9e9e9e"
+      }
+    },
+    "6b47ade0-6bce-492c-a40e-7d434cb0f0ee": {
+      "type": "banner-section",
+      "settings": {
+        "min_height": 400,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "content_color": "#ffffff",
+        "titleid": "",
+        "subtitleid": "",
+        "imageid": "shopify:\/\/shop_images\/logo.png"
+      }
+    },
+    "2815c019-b8f5-4d21-9164-11567d350e6a": {
       "type": "text-section",
       "settings": {
-        "title_id": "Test title",
-        "richtext_id": "<p>test sub<\/p>",
+        "title_id": "111111111111111111",
+        "richtext_id": "<p>11111111111111111111111111<\/p>",
         "pt_id": 5,
         "pb_id": 5,
-        "mt_id": 25,
-        "mb_id": 10,
-        "min-height_id": 170,
-        "color_id": "#0b365b",
-        "button_title": "BTN",
+        "mt_id": 0,
+        "mb_id": 0,
+        "min-height_id": 0,
+        "color_id": "#000000",
+        "button_title": "Button",
         "button_title_color": "#000000",
-        "button_bg": "#f0f8ff",
-        "button_url": "https:\/\/google.com",
-        "text_align": "left"
+        "button_bg": "#a6b0b9",
+        "button_url": "",
+        "text_align": "center"
       }
     }
   },
   "order": [
-    "77491f9c-08d1-40bb-a429-92aafbb5d4a5",
     "main",
-    "466172c4-84fa-4754-808d-114cee3f3ddd"
+    "78b282ac-c3ba-4597-be23-77bd8f357a41",
+    "6b47ade0-6bce-492c-a40e-7d434cb0f0ee",
+    "2815c019-b8f5-4d21-9164-11567d350e6a"
   ]
 }
