@@ -2,7 +2,8 @@
 <script src="{{ 'steps-scroll-section.js' | asset_url }}" defer></script>
 
 <style>
-  #shopify-section-{{ section.id }}{
+  #shopify-section-{{ section.id }} .s-steps {
+    display: block;
     background: {{ section.settings.bg_color }};
     margin-top: {{ section.settings.margin_top_desktop }}px;
     margin-bottom: {{ section.settings.margin_bottom_desktop }}px;
@@ -23,7 +24,7 @@
 }
 </style>
 
-<s-steps-scroll>
+<s-steps-scroll class="s-steps">
   <div class="s-steps-scroll">
     <div class="s-steps-scroll__row">
       <div class="s-steps-scroll__content">
@@ -43,13 +44,15 @@
        </div>
       </div>
 
-      <div class="s-steps-scroll__images">
-        {% for block in section.blocks %}
+      <div class="s-steps-scroll__wrapper-images">
+        <div class="s-steps-scroll__images">
+          {% for block in section.blocks %}
           {%- assign step_image = block.settings -%}
           <div data-image-index={{ forloop.index }} class="s-steps-scroll__images__image" >
             <img src="{{ step_image.image | img_url: 'master' }}">
           </div>
        {% endfor %} 
+        </div>
       </div>
     </div>
   </div>
@@ -91,7 +94,7 @@
         "max": 150,
         "step": 5,
         "label": "Margin Bottom Desktop",
-        "default": 50
+        "default": 0
       }, {
         "type": "range",
         "id": "margin_bottom_mobile",
@@ -99,7 +102,7 @@
         "max": 150,
         "step": 5,
         "label": "Margin Bottom Mobile",
-        "default": 50
+        "default": 0
       }, {
         "type": "range",
         "id": "padding_top_desktop",
@@ -107,7 +110,7 @@
         "max": 150,
         "step": 5,
         "label": "Padding Top Desktop",
-        "default": 50
+        "default": 100
       }, {
         "type": "range",
         "id": "padding_top_mobile",
@@ -123,7 +126,7 @@
         "max": 150,
         "step": 5,
         "label": "Padding Bottom Desktop ",
-        "default": 50
+        "default": 100
       }, {
         "type": "range",
         "id": "padding_bottom_mobile",
