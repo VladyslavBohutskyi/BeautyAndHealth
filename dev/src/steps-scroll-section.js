@@ -26,11 +26,9 @@ if (!customElements.get('s-steps-scroll')) {
       } else if (window.scrollY < this.sectionTopValue) {
         this.querySelector('.s-steps-scroll__row').classList.remove('s-steps-scroll__row--active')
         this.sectionTopValue = 0
-        console.log('2 yclovie');
       } else if (window.scrollY > (this.sectionTopValue + this.sectionHeight - 500)) {
         this.querySelector('.s-steps-scroll__row').classList.remove('s-steps-scroll__row--active')
         this.querySelector('.s-steps-scroll__row').style.transform = 'translateY(' + (this.sectionHeight - 600) + 'px)'
-        console.log('3 yclovie');
         this.sectionBottomValue = window.scrollY
       } else if (window.scrollY < (this.sectionTopValue + this.sectionHeight - 500) && this.sectionBottomValue > 0) {
         this.sectionBottomValue = 0
@@ -45,9 +43,6 @@ if (!customElements.get('s-steps-scroll')) {
         wrapperImages.style.transform = 'translateY(' + (this.sectionTopValue - window.scrollY) + 'px)'
       }
 
-      console.log(window.scrollY);
-      console.log(this.sectionTopValue + this.sectionHeight);
-
       // e.querySelector('img').style.top = -(window.scrollY - this.srollPosImage)/10 + 'px' -------scroll
       // this.srollPosImage = window.scrollY   -------scroll
 
@@ -57,22 +52,33 @@ if (!customElements.get('s-steps-scroll')) {
 
       const images = this.querySelectorAll('.s-steps-scroll__images__image')
       const contents = Array.from(this.querySelectorAll('.s-steps-scroll__content__step'))
-      images.forEach((e) => {
-        if (e.getBoundingClientRect().y < (Math.round(window.screen.availHeight / 3))) {
-          if (!this.activeImages.includes(e.getAttribute('data-image-index'))) {
-            contents[e.getAttribute('data-image-index') - 2] == undefined ? false : contents[e.getAttribute('data-image-index') - 2].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--top'
-            contents[e.getAttribute('data-image-index') - 1] == undefined ? false : contents[e.getAttribute('data-image-index') - 1].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--active'
-            contents[e.getAttribute('data-image-index')] == undefined ? false : contents[e.getAttribute('data-image-index')].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--bottom'
-            this.activeImages.push(e.getAttribute('data-image-index'));
-          }
-        }
-        else if (e.getBoundingClientRect().y > (Math.round(window.screen.availHeight) / 2) && this.activeImages.includes(e.getAttribute('data-image-index'))) {
-          contents[e.getAttribute('data-image-index') - 3] == undefined ? false : contents[e.getAttribute('data-image-index') - 3].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--top'
-          contents[e.getAttribute('data-image-index') - 2] == undefined ? false : contents[e.getAttribute('data-image-index') - 2].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--active'
-          contents[e.getAttribute('data-image-index') - 1] == undefined ? false : contents[e.getAttribute('data-image-index') - 1].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--bottom'
-          this.activeImages.pop();
-        }
-      })
+      this.sectionHeight // висота секції
+      this.sectionTopValue
+      const heightImage = 700 // висота кртинки і марджини
+      console.log(this.sectionTopValue);
+
+
+
+
+
+
+      
+      // images.forEach((e) => {
+      //   if (e.getBoundingClientRect().y < (Math.round(window.screen.availHeight / 3))) {
+      //     if (!this.activeImages.includes(e.getAttribute('data-image-index'))) {
+      //       contents[e.getAttribute('data-image-index') - 2] == undefined ? false : contents[e.getAttribute('data-image-index') - 2].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--top'
+      //       contents[e.getAttribute('data-image-index') - 1] == undefined ? false : contents[e.getAttribute('data-image-index') - 1].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--active'
+      //       contents[e.getAttribute('data-image-index')] == undefined ? false : contents[e.getAttribute('data-image-index')].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--bottom'
+      //       this.activeImages.push(e.getAttribute('data-image-index'));
+      //     }
+      //   }
+      //   else if (e.getBoundingClientRect().y > (Math.round(window.screen.availHeight) / 2) && this.activeImages.includes(e.getAttribute('data-image-index'))) {
+      //     contents[e.getAttribute('data-image-index') - 3] == undefined ? false : contents[e.getAttribute('data-image-index') - 3].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--top'
+      //     contents[e.getAttribute('data-image-index') - 2] == undefined ? false : contents[e.getAttribute('data-image-index') - 2].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--active'
+      //     contents[e.getAttribute('data-image-index') - 1] == undefined ? false : contents[e.getAttribute('data-image-index') - 1].classList = 's-steps-scroll__content__step s-steps-scroll__content__step--bottom'
+      //     this.activeImages.pop();
+      //   }
+      // })
     }
 
     scrollEvent() {
