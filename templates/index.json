@@ -12,57 +12,13 @@
         "imageid": "shopify:\/\/shop_images\/Soap-Image2.png"
       }
     },
-    "fc3b6581-81b3-46ba-9fa4-2b8ed89c7ced": {
-      "type": "steps-scroll-section",
-      "blocks": {
-        "4e4517c0-7375-42a2-a08c-9f48e8714687": {
-          "type": "Step",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt velit distinctio provident sequi unde!<\/p>"
-          }
-        },
-        "437826b4-8b99-4f76-80ea-f22c0855fbf7": {
-          "type": "Step",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fashion-model-in-fur.jpg",
-            "content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt velit distinctio provident sequi unde!<\/p>"
-          }
-        },
-        "80f42f64-7f5b-456a-8fd8-dd0841d47f44": {
-          "type": "Step",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
-            "content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt velit distinctio provident sequi unde!<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "4e4517c0-7375-42a2-a08c-9f48e8714687",
-        "437826b4-8b99-4f76-80ea-f22c0855fbf7",
-        "80f42f64-7f5b-456a-8fd8-dd0841d47f44"
-      ],
-      "settings": {
-        "bg_color": "#f4f3f3",
-        "margin_top_desktop": 0,
-        "margin_top_mobile": 0,
-        "margin_bottom_desktop": 50,
-        "margin_bottom_mobile": 50,
-        "padding_top_desktop": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom_desktop": 50,
-        "padding_bottom_mobile": 50,
-        "section_title": "Welcome to my shop!",
-        "show_steps": true
-      }
-    },
     "6b47ade0-6bce-492c-a40e-7d434cb0f0ee": {
       "type": "banner-section",
       "settings": {
         "min_height": 400,
         "margin_top": 0,
         "margin_bottom": 0,
-        "content_color": "#FFFFFF",
+        "content_color": "#ffffff",
         "titleid": "",
         "subtitleid": "",
         "imageid": "shopify:\/\/shop_images\/logo.png"
@@ -78,19 +34,69 @@
         "mt_id": 0,
         "mb_id": 0,
         "min-height_id": 0,
-        "color_id": "#000",
+        "color_id": "#000000",
         "button_title": "Button",
-        "button_title_color": "#000",
+        "button_title_color": "#000000",
         "button_bg": "#a6b0b9",
         "button_url": "",
         "text_align": "center"
+      }
+    },
+    "2aa26886-31b8-4f0e-aa1d-15e7cf519177": {
+      "type": "images-scroll",
+      "blocks": {
+        "ef169a15-1e25-4522-afa4-1779a7620d76": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg",
+            "content_color": "#000000",
+            "title": "Kelly",
+            "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quasi excepturi asperiores totam fugiat at!"
+          }
+        },
+        "2256cd55-4ab6-47c2-8a7b-7d9372d078f4": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fashion-model-in-fur.jpg",
+            "content_color": "#000000",
+            "title": "Shayla",
+            "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quasi excepturi asperiores totam fugiat at!"
+          }
+        },
+        "d1935ac7-c4f8-437b-bf59-a0ee27acd061": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "content_color": "#000000",
+            "title": "Elena",
+            "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quasi excepturi asperiores totam fugiat at!"
+          }
+        }
+      },
+      "block_order": [
+        "ef169a15-1e25-4522-afa4-1779a7620d76",
+        "2256cd55-4ab6-47c2-8a7b-7d9372d078f4",
+        "d1935ac7-c4f8-437b-bf59-a0ee27acd061"
+      ],
+      "settings": {
+        "bg_color": "#FFFFFF",
+        "margin_top_desktop": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_desktop": 0,
+        "margin_bottom_mobile": 0,
+        "padding_top_desktop": 100,
+        "padding_top_mobile": 50,
+        "padding_bottom_desktop": 100,
+        "padding_bottom_mobile": 50,
+        "container_width": 1300,
+        "section_title": "Welcome to my shop!"
       }
     }
   },
   "order": [
     "main",
-    "fc3b6581-81b3-46ba-9fa4-2b8ed89c7ced",
     "6b47ade0-6bce-492c-a40e-7d434cb0f0ee",
-    "2815c019-b8f5-4d21-9164-11567d350e6a"
+    "2815c019-b8f5-4d21-9164-11567d350e6a",
+    "2aa26886-31b8-4f0e-aa1d-15e7cf519177"
   ]
 }
